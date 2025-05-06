@@ -1,17 +1,28 @@
 
     <aside>
+        <div class="img-container">
+            <img src="" alt="logo">
+        </div>
+
         <form action="">
+            <!--needs to generate database content-->
                 <fieldset>
-                    <label for="products">Choose a product</label>
+                    <label for="products">Product</label>
                     <select name="products" id="products">
-
+                        <option value="" disabled selected hidden>Choose your product..</option>
                     </select>
-                    <label for="units">Choose your unit</label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="units">Unit</label>
                     <select name="units" id="units">
-
+                        <option value="" disabled selected hidden>Choose your product..</option>
                     </select>
-                    <label for="amount">Choose your amount</label>
-                    <input type="text" name="amount" id="amount">
+                </fieldset>
+
+                <fieldset>
+                    <label for="amount">Amount</label>
+                    <input type="text" name="amount" id="amount" placeholder="Choose your amount..">
                 </fieldset>
         </form>
     </aside>
