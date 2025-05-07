@@ -29,7 +29,7 @@ html,body,.layout{
     font-size: medium;
     display: flex;
     flex-direction: row;
-    gap:35rem;
+    justify-content: space-between;
 }
 
 

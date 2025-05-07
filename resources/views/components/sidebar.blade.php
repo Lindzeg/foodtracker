@@ -3,7 +3,8 @@
         <div class="img-container">
             <img src="" alt="logo">
         </div>
-
+        
+<!--make a form component-->
         <form action="">
             <!--needs to generate database content-->
                 <fieldset>

@@ -8,7 +8,12 @@
 </head>
 <body>
     <div class="layout">
-        {{ $slot }}
+        {{ $leftSidebar}}
+        <main>
+            {{ $main}}
+        </main>
+
+        {{ $pageBlock}}
     </div>
 </body>
 </html>

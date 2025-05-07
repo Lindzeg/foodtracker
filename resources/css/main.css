@@ -11,6 +11,7 @@ main{
         background-color: var(--bgLightGray);
         width:48rem;
         padding:1rem;
+        border-radius:10px;
 
         >.text-container{
             display: flex;

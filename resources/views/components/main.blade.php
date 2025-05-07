@@ -31,5 +31,6 @@
                 <td>120 g</td>
               </tr>
             </tbody>
+        </table>
     </section>
 </main>
