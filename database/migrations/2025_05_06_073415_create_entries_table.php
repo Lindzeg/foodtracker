@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('entries', function (Blueprint $table) {
             $table->id();
             $table->foreignId('product_id')->contstrained();
-            $table->decimal('amount' , 5, 2);
+            $table->decimal('amount' , 5,);
             $table->timestamps();
         });
     }

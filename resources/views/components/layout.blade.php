@@ -9,10 +9,7 @@
 <body>
     <div class="layout">
         {{ $leftSidebar}}
-        <main>
-            {{ $main}}
-        </main>
-
+        {{ $main}}
         {{ $pageBlock}}
     </div>
 </body>
