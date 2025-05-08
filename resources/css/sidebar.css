@@ -23,7 +23,7 @@ aside{
     }
 
     >form{
-        height:25rem;
+        height:auto;
         width:80%;
         background-color: var(--bgWhite);
         border-radius: 10px;
@@ -56,6 +56,12 @@ aside{
             >input::placeholder{
                 color:var(--textGray);
                 padding-left: 0.5rem;
+             }
+             >button,a{
+                width:100%;
+                >button{
+                    width:100%;
+                }
              }
         }
 

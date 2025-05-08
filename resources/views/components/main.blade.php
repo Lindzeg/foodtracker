@@ -1,3 +1,5 @@
+@props([ 'amount', 'entries', 'products', 'units'])
+
 <main>
     <section class="progress-container">
 
@@ -7,8 +9,18 @@
             </svg>
 
             <div class="text-container">
-                <p>Total kcal for today</p>
-                <p>500</p> <!--insert var for total kcal intake-->
+                <p id="total">Total kcal for today</p>
+
+                @php $total = 0; @endphp
+
+                @foreach (session('entries', []) as $entry)
+                    @php
+                        $subtotal = $entry['amount'] * $entry['kcal'];
+                        $total += $subtotal;
+                    @endphp
+
+                @endforeach
+                <p>{{ $total }}</p>
             </div>
     </section>
 
@@ -17,19 +29,23 @@
             <thead>
               <tr>
                 <th>Product</th>
-                <th>Amount</th>
-                <th>Kcal</th>
+                <th>Total amount</th>
+                <th>Total kcal</th>
                 <th>Unit</th>
               </tr>
             </thead>
             <tbody>
-                <!--foreach for displaying selected products-->
-              <tr>
-                <td>Bananen</td> <!--insert vars for database items -->
-                <td>6</td>
-                <td>89</td>
-                <td>120 g</td>
-              </tr>
+                @foreach ($entries as $entry)
+                <!--insert foreach loop for entries-->
+                    <tr>
+                        <!--insert vars for entry items -->
+                        <td>{{ $entry['product_name'] }}</td>
+                        <td>{{ $entry['amount'] . ' ' . $entry['unit_label'] }}</td>
+                        <td>{{ $entry['total_kcal'] }}</td>
+                        <td>{{ $entry['unit_label'] }}</td>
+                    </tr>
+                @endforeach
+
             </tbody>
         </table>
     </section>

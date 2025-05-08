@@ -17,14 +17,16 @@ main{
             display: flex;
             flex-direction: column;
             justify-content: center;
+            text-align: center;
             gap:1rem;
 
-            >p{
+            >p#total{
                 text-align: center;
                 margin:0;
-                font-size:x-large;
+                font-size:large;
+                color:var(--txtDark);
             }
-            >p:last-of-type{
+            >p{
                font-size: 4rem;
                color: var(--txtWhite);
             }

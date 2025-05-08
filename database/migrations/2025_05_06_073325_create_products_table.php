@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('unit_id')->contstrained();
             $table->string('name');
-            $table->decimal('amount', 5, 2);
-            $table->decimal('kcal', 5, 2);
+            $table->decimal('amount', 5);
+            $table->decimal('kcal', 5);
             $table->timestamps();
         });
     }

@@ -9,7 +9,11 @@
     </x-slot>
 
     <x-slot name="main">
-        <x-main />
+        <x-main
+        :products="$products"
+        :units="$units"
+        :entries="$entries"
+        />
     </x-slot>
 
     <x-slot name="pageBlock">
