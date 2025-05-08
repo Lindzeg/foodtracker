@@ -38,7 +38,7 @@
                 @foreach ($entries as $entry)
                 <!--insert foreach loop for entries-->
                     <tr>
-                        <!--insert vars for entry items -->
+                        <!--insert keys -->
                         <td>{{ $entry['product_name'] }}</td>
                         <td>{{ $entry['amount'] . ' ' . $entry['unit_label'] }}</td>
                         <td>{{ $entry['total_kcal'] }}</td>

@@ -1,6 +1,6 @@
 
 aside{
-    background-color: var(--bgLightGray);
+    background-color: var(--bgDarkOrange);
     width:17.5rem;
     height:96.5%;
     display: flex;
@@ -26,6 +26,7 @@ aside{
         height:auto;
         width:80%;
         background-color: var(--bgWhite);
+        box-shadow: 0px 5px 15px rgb(75, 21, 8);
         border-radius: 10px;
         padding:0.5rem;
         display:flex;
@@ -69,7 +70,16 @@ aside{
 }
 
 .page-block{
-    background-color: var(--bgLightGray);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-color: var(--bgCloudy);
     width:17.5rem;
     height:100%;
+    >.half-circle.outer {
+        width:90%;
+        height:90%;
+        background-color: var(--bgSky);
+        border-radius: 70rem 0rem 0rem 70rem;
+    }
 }

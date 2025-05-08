@@ -38,22 +38,22 @@
                 @endif
 
             </select>
-        </fieldset>
-        <fieldset>
-            <label for="amount">Amount </label>
-            <input type="number" name="amount" id="amount" placeholder="Choose your amount.." required>
-        </fieldset>
+            </fieldset>
+            <fieldset>
+                <label for="amount">Amount </label>
+                <input type="number" name="amount" id="amount" placeholder="Choose your amount.." required>
+            </fieldset>
 
-        <fieldset>
-            <button type="submit">Submit</button>
-        </fieldset>
+            <fieldset>
+                <button type="submit">Submit</button>
+            </fieldset>
 
-        <fieldset>
-            <!--new hhtp request for resetting entries session-->
-            <a href="{{ route('entries.reset') }}">
-                <button type="button">Reset data</button>
-            </a>
-        </fieldset>
+            <fieldset>
+                <!--new hhtp request for resetting entries session-->
+                <a href="{{ route('entries.reset') }}">
+                    <button type="button">Reset data</button>
+                </a>
+            </fieldset>
     </form>
 
 </aside>
