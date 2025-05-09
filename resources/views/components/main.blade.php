@@ -35,14 +35,16 @@
               </tr>
             </thead>
             <tbody>
+
                 @foreach ($entries as $entry)
+
                 <!--insert foreach loop for entries-->
                     <tr>
                         <!--insert keys -->
-                        <td>{{ $entry['product_name'] }}</td>
-                        <td>{{ $entry['amount'] . ' ' . $entry['unit_label'] }}</td>
-                        <td>{{ $entry['total_kcal'] }}</td>
-                        <td>{{ $entry['unit_label'] }}</td>
+                        <td>{{ $entry['product_name'] ??  'no products' }}</td>
+                        <td>{{ $entry['amount'] . ' ' . $entry['unit_label'] ?? 'no amount' }}</td>
+                        <td>{{ $entry['total_kcal'] ?? 'no kcal' }}</td>
+                        <td>{{ $entry['unit_label'] ?? 'no unit' }}</td>
                     </tr>
                 @endforeach
 

@@ -39,17 +39,19 @@ main{
         justify-content: center;
         align-items: center;
         background-color: var(--bgMosterd);
+        border:none;
+        border-radius:5px;
         width:48rem;
         padding:1rem;
         >table{
             background-color: var(--bgWhite);
             width:100%;
-            text-align: center;
+            text-align: left;
             padding: 1rem;
             thead{
                 >tr{
                     >th{
-                        padding-bottom:1rem;
+                     padding-bottom:1;
                     }
                 }
             }

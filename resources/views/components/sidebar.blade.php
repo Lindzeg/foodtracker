@@ -2,7 +2,7 @@
 
 <aside>
     <div class="img-container">
-        <img src="" alt="logo">
+            <img src="{{ asset('img/hot-dog.png') }}" alt="logo">
     </div>
 
     <!--make a form component-->
